@@ -7,98 +7,108 @@
 
 .main{
     background-color: #141414;
-
 }
 .main__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    text-align: center;
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1500px;
     padding: 0 50px;
 }
-
 .main__content h1{
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb141 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h2{
     font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #1e00ff 0%, #00ffff 100%);
     background-size: 100%;
+    padding: 20px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
+.main__content h2{
+    font-size: 2.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0000 0%, #ff8800 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
 .main__content p{
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
 }
 
-.main__btn {
+
+.contactButton {
+    text-align: center;
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062, 0%, #fe5196 100%);
-    padding: 14px 32px;
+    color: #fff;
+    padding: 12px 24px;
     border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
+    border-radius: 24px;
+    margin-top: 1.5rem;
     position: relative;
-    transition: all 0.35s;
     outline: none;
-}
+    
 
-.main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
+    /* I don't think this transition is working. */
+    transition-property: content;
+    transition-duration: 10s;
+    transition-timing-function: ease-in;
+    transition-delay: 10s;
+}
+.contactButton a {
     text-decoration: none;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
 }
 
-.main__btn:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.35s;
-        border-radius: 4px;
+.contactButton::before {
+    content: "Contact Info";
+    font-size: 1.25rem;
+    z-index: -1;
+    opacity: 1; /* Initially visible */
+}
+
+.contactButton:hover::after {
+    content: "jjo5541@psu.edu";
+    font-size: 1.25rem;
+    
+}
+
+.contactButton:hover::before {
+    content: "";
+    font-size: 1.25rem;
+    opacity: 0; /* Initially visible */
 
 }
 
-.main__btn:hover {
-    background: #fff;
-}
 
-.main__btn:hover:after {
-    width: 100%;
-}
 
 .main__img--container{
     text-align: center;
 }
-#main__image{
+
+#main__img{
     height: 80%;
     width: 80%;   
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,6 +157,8 @@
         margin: 2.5rem 0;
     }
 }
+
+
 
 
 

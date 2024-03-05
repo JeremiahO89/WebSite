@@ -5,7 +5,6 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
-
 .main{
     background-color: #141414;
 }
@@ -51,7 +50,6 @@
     color: #fff;
 }
 
-
 .contactButton {
     text-align: center;
     font-size: 1rem;
@@ -62,9 +60,14 @@
     border-radius: 24px;
     margin-top: 1.5rem;
     position: relative;
-    transition: all 1s;
     outline: none;
+    
 
+    /* I don't think this transition is working. */
+    transition-property: content;
+    transition-duration: 10s;
+    transition-timing-function: ease-in;
+    transition-delay: 10s;
 }
 .contactButton a {
     text-decoration: none;
@@ -85,6 +88,7 @@
 .contactButton:hover::after {
     content: "jjo5541@psu.edu";
     font-size: 1.25rem;
+    
 }
 
 .contactButton:hover::before {
@@ -96,6 +100,7 @@
 
 
 
+
 .main__img--container{
     text-align: center;
 }
@@ -103,6 +108,7 @@
 #main__img{
     height: 80%;
     width: 80%;   
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,7 +139,6 @@
         margin-top: 1.5rem;
     }
 }
-
 @media screen and (max-width: 480px) {
     .main__content h1 {
         font-size: 2rem;
@@ -150,110 +155,6 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
-}
-
-
-
-
-
-.services {
-    background: #141414;
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
-    height: 100vh;
-}
-
-.services h1 {
-    background: #ff8177;
-    background-image: linear-gradient(to right, 
-    #ff8177 0%, #ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%, #b12a5b 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.services__container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, 
-    rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),  
-    url('images/pic2.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
-.services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, 
-    rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%
-    ), url('images/pic1.jpg');
-}
-
-.services h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.services__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-.services__card button{
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    position: absolute;
-    top: 440px;
-    left: 40px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.services__card:hover{
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-    .services{
-        height: 1600px;
-    }
-
-    .services h1{
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-    
-}
-
-@media screen and (max-width: 480px) {
-    .services{
-        height: 1400px;
-    }
-
-    .services__card{
-        width: 300px;
-    }
-    
 }
 
 
