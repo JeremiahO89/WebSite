@@ -15,8 +15,7 @@
 
 .services h1 {
     background: #ff8177;
-    background-image: linear-gradient(to right, 
-    #ff8177 0%, #ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%, #b12a5b 100%);
+    background-image: linear-gradient(to top,  #f3685e 0%, #ff8177 100%);
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;

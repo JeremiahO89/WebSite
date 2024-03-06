@@ -7,7 +7,7 @@
 }
 
 .social__media h2{
-    position: relative;
+    /* position: relative; */
     margin-top: 25px;
     bottom: 0;
     color: white;
@@ -16,17 +16,21 @@
 }
 
 
-
-.social__icons{
-    background-image: linear-gradient(to Top, #fff 0%, #fff 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.social__icons {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     font-size: 50px;
-    text-align: center;
-    
 }
-.social__icon--link{
-    margin: 0 15px;
+
+.social__icon--link {
+    position: relative;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.social__icon--link:hover {
+    transform: translateY(-10px);
 }
