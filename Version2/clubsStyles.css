@@ -65,17 +65,22 @@
     left: 30px;
 }
 
-.Ri3D_Dates {
+.services__card p {
     position: absolute;
     bottom: 163px;
     left: 260px;
 }
-
-.Ri3D_Info{
+.Ri3D_Info p:first-child {
     position: absolute;
-    bottom: 130px;
-    left: 50px;
+    bottom: 163px;
+    left: 260px;
 }
+.Ri3D_Info p:last-child {
+    position: absolute;
+    bottom: 90px;
+    left: 30px;
+}
+
 .services__card button{
     color: #fff;
     padding: 10px 20px;
