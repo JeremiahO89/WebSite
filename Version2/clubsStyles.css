@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.services {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    height: 100vh;
+}
+
+.services h1 {
+    background: #ff8177;
+    background-image: linear-gradient(to top,  #d10eb1 0%, #ff61e5 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 1rem;
+    height: 800px;
+    width: 1000px;
+    border-radius: 15px;
+    background-image: linear-gradient(to Top,
+     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    
+}
+.services__card embed {
+    border-radius: 15px;
+    height: 75%;
+    width: 100%;
+}
+
+.services__card:nth-child(2) {
+    background-image: linear-gradient(to Top,
+    rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
+}
+
+.services__card:nth-child(3) {
+    background-image: linear-gradient(to Top,
+    rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
+}
+
+.services h2 {
+    position: absolute;
+    bottom: 160px;
+    left: 30px;
+}
+
+.Ri3D_Dates {
+    position: absolute;
+    bottom: 163px;
+    left: 260px;
+}
+
+.Ri3D_Info{
+    position: absolute;
+    bottom: 130px;
+    left: 50px;
+}
+.services__card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services__card:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.popUp__containerR{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    pointer-events: none;
+    z-index: 2;
+
+    opacity: 0;
+}
+.popUp__containerR.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .3s ease-in;
+}
+.popUpTextR {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+.popUpTextR h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+
+    background-image: linear-gradient(to Top,
+    rgba(155, 155, 155, .25) 10%, #f77062 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.popUp__containerR embed {
+    border-radius: 25px;
+    height: 900px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.popUpTextR button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.popUp__containerT{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    pointer-events: none;
+    z-index: 2;
+
+    opacity: 0;
+}
+.popUp__containerT.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .3s ease-in;
+}
+.popUpTextT {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+.popUpTextT h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+
+    background-image: linear-gradient(to Top,
+    rgba(155, 155, 155, .25) 10%, #f77062 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.popUp__containerT embed {
+    border-radius: 25px;
+    height: 900px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.popUpTextT button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+
+.popUp__containerC{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    pointer-events: none;
+    z-index: 2;
+
+    opacity: 0;
+}
+.popUp__containerC.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .3s ease-in;
+}
+.popUpTextC {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+.popUpTextC h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+
+    background-image: linear-gradient(to Top,
+    rgba(155, 155, 155, .25) 10%, #f77062 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.popUp__containerC embed {
+    border-radius: 25px;
+    height: 900px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.popUpTextC button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .services{
+        height: 1600px;
+    }
+
+    .services h1{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        height: 1400px;
+    }
+
+    .services__card{
+        width: 300px;
+    }
+    
+}
