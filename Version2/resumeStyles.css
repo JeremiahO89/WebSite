@@ -134,7 +134,7 @@
     height: 900px;
     width: 800px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .popUpTextR button{
     color: #fff;
@@ -190,7 +190,7 @@
     height: 900px;
     width: 800px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .popUpTextT button{
     color: #fff;
@@ -247,7 +247,7 @@
     height: 900px;
     width: 800px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .popUpTextC button{
     color: #fff;
@@ -271,7 +271,6 @@
     .services{
         height: 1600px;
     }
-
     .services h1{
         font-size: 2rem;
         margin-top: 12rem;
