@@ -136,28 +136,78 @@
     justify-content: center;
     display: flex;
     padding: 25px;
-    width: 100%;
+    width: 575px;
+    height: 475px;
     overflow: hidden;
 }
 
-.carousel-inner {
+
+
+.drone-inner {
     width: 95%;
     display: flex;
     align-items: center;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
+.drone-item {
     min-width: 100%;
     box-sizing: border-box;
 }
 
-.carousel-item img {
+.drone-item img {
     width: 100%;
     display: block;
 }
 
-.carousel-control {
+
+.arm-inner {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arm-item {
+    min-width:100%;
+    box-sizing: border-box;
+}
+
+.arm-item img {
+    width: 100%;
+    display: block;
+}
+.arm-item video {
+    width: 100%;
+    display: block;
+}
+
+
+.longboard-inner {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.longboard-item {
+    min-width:100%;
+    box-sizing: border-box;
+}
+
+.longboard-item img {
+    width: 100%;
+    display: block;
+}
+.longboard-item video {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -169,11 +219,11 @@
     user-select: none;
 }
 
-.carousel-control.left {
+.control.left {
     left: 200px;
-    top: 475px;
+    top: 490px;
 }
-.carousel-control.right {
+.control.right {
     right: 200px;
-    top: 475px;
+    top: 490px;
 }
