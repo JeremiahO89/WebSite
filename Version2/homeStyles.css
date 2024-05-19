@@ -61,8 +61,6 @@
     margin-top: 1.5rem;
     position: relative;
     outline: none;
-    
-
     /* I don't think this transition is working. */
     transition-property: content;
     transition-duration: 10s;
@@ -84,23 +82,17 @@
     z-index: -1;
     opacity: 1; /* Initially visible */
 }
-
 .contactButton:hover::after {
     content: "jjo5541@psu.edu";
     font-size: 1.25rem;
     
 }
-
 .contactButton:hover::before {
     content: "";
     font-size: 1.25rem;
     opacity: 0; /* Initially visible */
 
 }
-
-
-
-
 .main__img--container{
     text-align: center;
 }
@@ -110,7 +102,6 @@
     width: 80%;   
     border-radius: 50px;
 }
-
 @media screen and (max-width: 768px) {
     .main__container{
         display: grid;
@@ -156,5 +147,3 @@
         margin: 2.5rem 0;
     }
 }
-
-

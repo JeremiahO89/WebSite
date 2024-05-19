@@ -5,7 +5,7 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
-.services {
+.main_container {
     background: #141414;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     height: 100vh;
 }
 
-.services h1 {
+.main_container h1 {
     background: #ff8177;
     background-image: linear-gradient(to top,  #f3685e 0%, #ff8177 100%);
     background-size: 100%;
@@ -25,13 +25,13 @@
     -moz-text-fill-color: transparent;
 }
 
-.services__container{
+.cards__container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.services__card {
+.resume_card {
     margin: 1rem;
     height: 575px;
     width: 420px;
@@ -43,34 +43,34 @@
     color: #fff;
     
 }
-.services__card embed {
+.resume_card embed {
     border-radius: 15px;
     height: 72.5%;
     width: 100%;
 }
 
-.services__card:nth-child(2) {
+.resume_card:nth-child(2) {
     background-image: linear-gradient(to Top,
     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
 }
 
-.services__card:nth-child(3) {
+.resume_card:nth-child(3) {
     background-image: linear-gradient(to Top,
     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
 }
 
-.services h2 {
+.main_container h2 {
     position: absolute;
     top: 440px;
     left: 30px;
 }
 
-.services__card p {
+.resume_card p {
     position: absolute;
     top: 480px;
     left: 30px;
 }
-.services__card button{
+.resume_card button{
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -83,14 +83,12 @@
     font-size: 1rem;
     cursor: pointer;
 }
-
-.services__card:hover{
+.resume_card:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in;
     cursor: pointer;
     z-index: 1;
 }
-
 
 .popUp__containerR{
     flex-direction: column;

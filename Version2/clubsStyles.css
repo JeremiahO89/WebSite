@@ -48,7 +48,7 @@
     background-color: transparent;
 }
 
-.services__card {
+.club__card {
     margin: 1rem;
     height: 650px;
     width: 950px;
@@ -59,7 +59,7 @@
     position: relative;
     color: #fff;    
 }
-.services__card embed {
+.club__card embed {
     border-radius: 15px;
     height: 460px; /* 650 origional */
     width: 950px; /* 1200 origional */
@@ -67,12 +67,12 @@
     margin: 0 auto; /* Center the embed horizontally */
 }
 
-.services__card:nth-child(2) {
+.club__card:nth-child(2) {
     background-image: linear-gradient(to Top,
     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
 }
 
-.services__card:nth-child(3) {
+.club__card:nth-child(3) {
     background-image: linear-gradient(to Top,
     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
 }
@@ -83,7 +83,7 @@
     left: 30px;
 }
 
-.services__card p {
+.club__card p {
     position: absolute;
     bottom: 153px;
     left: 260px;
@@ -132,7 +132,7 @@
     left: 30px;
 }
 
-.services__card button{
+.club__card button{
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -147,7 +147,7 @@
 }
 
 
-.services__card button:hover{
+.club__card button:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in;
     cursor: pointer;
