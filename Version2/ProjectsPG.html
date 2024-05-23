@@ -3,50 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="navStyles.css">
+        <title>Jeremiah Ondrasik</title>
         <link rel="stylesheet" href="projectsStyles.css">
-        <link rel="stylesheet" href="footerStyles.css">
+        <script type="module" src="head_foot.js"> </script>
+        <script src='imageScript.js'> </script>    
+        
         <script src="https://kit.fontawesome.com/0be421ce76.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+        
+    
     </head>
 
     <body>
-        <nav class="navbar">
-            <div class="navbar__container">
-                <ul class="navbar__logo__list">
-                    <a href="HomePG.html" id="navbar__icon"><i class="fa-solid fa-frog"></i></a>
-                    <a href="HomePG.html" id="navbar__logo"><i class=""></i>Jeremiah J Ondrasik</a>
-                </ul>
-
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="ResumePG.html" class="navbar__links">Resume</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="ProjectsPG.html" class="navbar__links">Projects</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="ClubsPG.html" class="navbar__links">Clubs</a>
-                    </li>
-                    <li class="navbar__btn">
-                        <a href="/" class="button">Information</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
+        <my-header></my-header>
 
         <div class="services">        
-
             <h1>Projects</h1>
                 <div class="clubs__container">
                     
@@ -176,34 +149,6 @@
                 </div> 
         </div>
 
-
-
-        <div class="footer__container">
-            <div class="social__media">
-                <div class="social__icons">
-                    <a href="https://www.linkedin.com/in/jeremiah-ondrasik/" class = "social__icon--link" target = "_blank"> 
-                        <i class = "fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/JeremiahO89" class = "social__icon--link" target = "_blank"> 
-                        <i class = "fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@jeremiahondrasik3133" class = "social__icon--link" target = "_blank"> 
-                        <i class = "fab fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/jeremiah_ondrasik/" class = "social__icon--link" target = "_blank"> 
-                        <i class = "fab fa-instagram"></i>
-                    </a>
-                    <a href="/" class = "social__icon--link" target = "_blank"> 
-                        <i class = "fab fa-facebook"></i>
-                    </a>
-                </div>
-                <h2>&copy; JJO 2023 All rights reserved</h2>
-            </div>
-
-        </div>
-
-        <script src='app.js'> </script>
-        <script src='imageScript.js'> </script>
-
+        <my-footer></my-footer>
     </body>
 </html>
