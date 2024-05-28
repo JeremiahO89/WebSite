@@ -62,7 +62,7 @@ class MyFooter extends HTMLElement {
                         <i class="fab fa-facebook"></i>
                     </a>
                 </div>
-                <h2>&copy; JJO 2023 All rights reserved</h2>
+                <h2>&copy; JJO 2024 All rights reserved</h2>
             </div>
         </div>
         `;
