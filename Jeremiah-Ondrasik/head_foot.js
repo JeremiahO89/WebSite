@@ -7,8 +7,8 @@ class MyHeader extends HTMLElement {
         <nav class="navbar">
         <div class="navbar__container">
             <ul class="navbar__logo__list">
-                <a href="HomePG.html" id="navbar__icon"><i class="fa-solid fa-frog"></i></a>
-                <a href="HomePG.html" id="navbar__logo"><i class=""></i>Jeremiah J Ondrasik</a>
+                <a href="index.html" id="navbar__icon"><i class="fa-solid fa-frog"></i></a>
+                <a href="index.html" id="navbar__logo"><i class=""></i>Jeremiah J Ondrasik</a>
             </ul>
 
             <div class="navbar__toggle" id="mobile-menu">
@@ -27,7 +27,7 @@ class MyHeader extends HTMLElement {
                     <a href="ClubsPG.html" class="navbar__links">Clubs</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Information</a>
+                    <a href="index.html" class="button">Home</a>
                 </li>
             </ul>
         </div>

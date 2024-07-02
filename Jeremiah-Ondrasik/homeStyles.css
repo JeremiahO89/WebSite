@@ -15,7 +15,7 @@
     text-align: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
@@ -24,19 +24,17 @@
 }
 .main__content h1{
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #1e00ff 0%, #00ffff 100%);
+    background-image: linear-gradient(to bottom, #5039ff 0%, #00aaaa 90%);
     background-size: 100%;
-    padding: 20px;
+    padding: 0;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
 .main__content h2{
-    font-size: 2.5rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0000 0%, #ff8800 100%);
+    font-size: 3rem;
+    background-image: linear-gradient(to bottom, #00aaaa 0%, #00ffff 90%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -47,13 +45,18 @@
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #d1d1d1;
+}
+
+.keyword{
+    color: #ff4e4e;
 }
 
 .contactButton {
+    top: 10px;
     text-align: center;
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062, 0%, #fe5196 100%);
+    background: #4027ff 0%;
     color: #fff;
     padding: 12px 24px;
     border: none;
@@ -102,7 +105,63 @@
     width: 80%;   
     border-radius: 50px;
 }
-@media screen and (max-width: 768px) {
+
+
+
+/* Used for rotating images */
+
+.project__card {
+    left:25px;
+    margin: .75rem;
+    height: 280px;
+    width: 650px;
+    border-radius: 15px;
+    background-image: linear-gradient(to Top,
+     rgba(155, 155, 155, .1) 10%, rgba(155, 155, 155, .25) 100%);
+    background-size: cover;
+    position: relative;
+    color: #fff;    
+}
+.project__card embed {
+    height: 250px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+
+.carousel {
+    padding: 20px;
+    height: 275px;    
+    width: 600px;
+
+    overflow: hidden;
+    margin-left: 25px;
+}
+
+
+.home-inner {
+    
+    width: 75%;
+    display: flex;
+    align-items: center;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.home-item {
+    min-width: 75%;
+    box-sizing: border-box;
+}
+
+.home-item img {
+    width: 100%;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 850px) {
     .main__container{
         display: grid;
         grid-template-columns: auto;
@@ -119,11 +178,11 @@
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top:  2rem;
     }
     .main__content h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     .main__content p{
         font-size: 1rem;
@@ -136,10 +195,10 @@
         margin-top:  3rem;
     }
     .main__content h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .main__content p{
-        font-size: 2rem;
+        font-size: .5rem;
         margin-top: 1.5rem;
     }
     .main__btn p{

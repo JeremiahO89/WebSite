@@ -45,10 +45,10 @@
 }
 .project__card embed {
     border-radius: 15px;
-    height: 460px; /* 650 origional */
-    width: 950px; /* 1200 origional */
-    display: block; /* Set display property to block */
-    margin: 0 auto; /* Center the embed horizontally */
+    height: 460px;
+    width: 950px;
+    display: block;
+    margin: 0 auto;
 }
 
 .project__card:nth-child(2) {
