@@ -130,6 +130,8 @@
     transition: all 0.3s ease;
 }
 
+
+/* PHONES */
 @media screen and (max-width: 960px){
     .navbar__container{
         display: flex;
@@ -167,6 +169,10 @@
 
     #navbar__icon {
         padding-left: 25px;
+        font-size: 1rem;
+    }
+    #navbar__logo {
+        font-size: 1rem;
     }
 
 

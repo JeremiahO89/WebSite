@@ -189,6 +189,9 @@
         margin-top: 1.5rem;
     }
 }
+
+
+/* PHONES */
 @media screen and (max-width: 480px) {
     .main__content h1 {
         font-size: 2rem;
@@ -205,4 +208,40 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+
+
+
+    .project__card {
+        left:2px;
+        margin: .5rem;
+        height: 100px;
+        width: 275px;
+        border-radius: 7.5px;
+    }
+    .project__card embed {
+        height: 100px;
+        width: 275px;
+    }
+    
+    .carousel {
+        padding: 5px;
+        height: 100x;    
+        width: 250px;
+
+        margin-left: 10px;
+    }
+    
+    
+    .home-inner {
+        width: 60%;
+    }
+    .home-item {
+        min-width: 80%;
+    }
+    .home-item img {
+        width: 100%;
+    }
+
+
 }
