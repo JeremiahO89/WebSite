@@ -1,9 +1,7 @@
-
 class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <link rel="stylesheet" href="navStyles.css">
-        <script src='navBar.js'> </script>
         <nav class="navbar">
         <div class="navbar__container">
             <ul class="navbar__logo__list">
@@ -36,8 +34,6 @@ class MyHeader extends HTMLElement {
     }
 }
 customElements.define('my-header', MyHeader);
-
-
 
 class MyFooter extends HTMLElement {
     connectedCallback() {

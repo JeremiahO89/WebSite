@@ -55,7 +55,7 @@
 .contactButton {
     top: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     background: #4027ff 0%;
     color: #fff;
     padding: 12px 24px;
@@ -64,45 +64,40 @@
     margin-top: 1.5rem;
     position: relative;
     outline: none;
-    /* I don't think this transition is working. */
-    transition-property: content;
-    transition-duration: 10s;
-    transition-timing-function: ease-in;
-    transition-delay: 10s;
+
 }
 .contactButton a {
     text-decoration: none;
     text-align: center;
     z-index: 1;
-    font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
 }
 
 .contactButton::before {
     content: "Contact Info";
-    font-size: 1.25rem;
     z-index: -1;
     opacity: 1; /* Initially visible */
 }
 .contactButton:hover::after {
     content: "jjo5541@psu.edu";
-    font-size: 1.25rem;
     
 }
 .contactButton:hover::before {
     content: "";
-    font-size: 1.25rem;
     opacity: 0; /* Initially visible */
 
 }
-.main__img--container{
-    text-align: center;
-}
 
-#main__img{
-    height: 80%;
-    width: 80%;   
+
+
+.main__img--containerBIG{
+    text-align: center;
+
+}
+#main__imgBIG{
+    height: auto;
+    width: 25vw;   
     border-radius: 50px;
 }
 
@@ -110,7 +105,7 @@
 
 /* Used for rotating images */
 
-.project__card {
+.carousel__container {
     left:25px;
     margin: .75rem;
     height: 280px;
@@ -122,7 +117,7 @@
     position: relative;
     color: #fff;    
 }
-.project__card embed {
+.carousel__container embed {
     height: 250px;
     width: 600px;
     margin: 0 auto;
@@ -161,41 +156,18 @@
 
 
 
-@media screen and (max-width: 850px) {
-    .main__container{
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        margin: 0 auto;
-        width: 100%;
-        height: 90vh;
-    }
-
-    .main__content {
-        text-align: center;
-        margin-bottom:  4rem;
-    }
-
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top:  2rem;
-    }
-    .main__content h2 {
-        font-size: 1.5rem;
-    }
-    .main__content p{
-        font-size: 1rem;
-        margin-top: 1.5rem;
-    }
-}
-
-
 /* PHONES */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
+
+    .main__container{
+        height: 100vh;
+        grid-template-columns: 1fr; /* Change to 1 column */
+        grid-template-rows: auto auto; /* Create 2 rows */
+    }
     .main__content h1 {
         font-size: 2rem;
-        margin-top:  3rem;
+        margin-top:  1.2rem;
+
     }
     .main__content h2 {
         font-size: 1rem;
@@ -210,16 +182,23 @@
     }
 
 
+    #main__imgBIG{
+        height: auto;
+        width: 55vw;   
+        border-radius: 50px;
+    }
 
 
-    .project__card {
-        left:2px;
+
+
+
+    .carousel__container {
         margin: .5rem;
         height: 100px;
         width: 275px;
         border-radius: 7.5px;
     }
-    .project__card embed {
+    .carousel__container embed {
         height: 100px;
         width: 275px;
     }
@@ -230,9 +209,7 @@
         width: 250px;
 
         margin-left: 10px;
-    }
-    
-    
+    }  
     .home-inner {
         width: 60%;
     }
@@ -242,6 +219,26 @@
     .home-item img {
         width: 100%;
     }
+
+
+
+
+
+    .contactButton {
+        top: 5px;
+        text-align: center;
+        font-size: .75rem;
+        background: #4027ff 0%;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 15px;
+        margin-top: .2rem;
+        position: relative;
+        outline: none;
+    }
+
+
 
 
 }

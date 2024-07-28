@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 20px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -47,7 +47,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 35px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -62,7 +62,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 35px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,7 +70,7 @@
 }
 
 .fa-frog {
-    margin-right: 20px;
+    margin-right: min(max(.5rem, 1.5vw), 20px);
 }
 
 
@@ -152,27 +152,30 @@
         top: -1000px;
         opacity: 1;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 40vh;
         z-index: -1;
         background: #131313;
     }
     
     .navbar__menu.active{
         background: #131313;
-        top: 100%;
+        top: 80%;
         opacity: 1;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 35vh;
         z-index: 99;
-        font-size: 1.6rem;
+        font-size: 2vw;
+    }
+    .navbar__item{
+        height: 10px
     }
 
     #navbar__icon {
-        padding-left: 25px;
-        font-size: 1rem;
+        padding-left: 5vw;
+        font-size: min(max(1rem, 5vw), 35px);
     }
     #navbar__logo {
-        font-size: 1rem;
+        font-size: min(max(1rem, 5vw), 35px);
     }
 
 
@@ -184,13 +187,10 @@
         background: #fff;
     }
 
-    .navbar__item{
-        width: 100%;
-    }
 
     .navbar__links {
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         display: table;
     }
@@ -203,7 +203,7 @@
     }
 
     .navbar__btn{
-        padding-bottom: 2rem;
+        padding:.5rem;
     }
 
     .button{
@@ -230,4 +230,5 @@
         transform:translateY(-8px) rotate(-45deg);
     }
 }
+
 

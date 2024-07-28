@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="homeStyles.css">
         <script type="module" src="head_foot.js"> </script>
         <script src='autoimageScript.js'> </script>  
-        
+        <script src="navBar.js" defer></script>
         <script src="https://kit.fontawesome.com/0be421ce76.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,39 +28,36 @@
                         <p>This website showcases my projects, clubs, and certifications.</p>
                     
                 
-                    <div class="project__card">
-                    <div class="carousel">
-                        <div class = "home-inner">
-                            <div class="home-item">
-                                <img src="images/projects/drone/Img1.jpg" alt="Home image 1">
-                            </div>
-                            <div class="home-item">
-                                <img src="images/projects/mazeRobot/Finished bot.jpg" alt="Home image 2">
-                            </div>
-                            <div class="home-item">
-                                <img src="images/projects/longboard/Img1.1.JPG" alt="Home image 3">
-                            </div>
-                            <div class="home-item">
-                                <img src="images/projects/roboticArm/Img1.png" alt="Home image 4">
-                            </div>
-                            <div class="home-item">
-                                <img src="images/projects/drone/Img3.jpg" alt="Home image 5">
+                    <div class="carousel__container">
+                        <div class="carousel">
+                            <div class = "home-inner">
+                                <div class="home-item">
+                                    <img src="images/projects/drone/Img1.jpg" alt="Home image 1">
+                                </div>
+                                <div class="home-item">
+                                    <img src="images/projects/mazeRobot/Finished bot.jpg" alt="Home image 2">
+                                </div>
+                                <div class="home-item">
+                                    <img src="images/projects/longboard/Img1.1.JPG" alt="Home image 3">
+                                </div>
+                                <div class="home-item">
+                                    <img src="images/projects/roboticArm/Img1.png" alt="Home image 4">
+                                </div>
+                                <div class="home-item">
+                                    <img src="images/projects/drone/Img3.jpg" alt="Home image 5">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                     <button class = "contactButton"></button>  <!-- MAKE THIS BUTTON DISPLAY MY EMAIL -->
                 </div>
-                
-                </div>              
-                <div class="main__image--container">
-                    <img src="images/home/headshot.jpeg" alt="pic" id="main__img">
-                </div>
-                
 
-                
+                <div class="main__image--containerBIG">
+                    <img src="images/home/headshot.jpeg" alt="pic" id="main__imgBIG">
+                </div>
             </div>
         </div>
-        
         <my-footer></my-footer>
     </body>
 </html>
