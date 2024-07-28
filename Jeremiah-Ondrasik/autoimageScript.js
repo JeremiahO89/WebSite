@@ -11,7 +11,9 @@ function showSlide(index, currentSlide) {
     }
     const inner = "." + currentSlide + "-inner";
     const carouselInner = document.querySelector(inner);
-    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    carouselInner.style.transform = `translateX(-${currentIndex * 95}%)`; 
+    // use to be 100 changed to 95 for better image viewing
+
 }
 
 function autoNextSlide(currentSlide) {
