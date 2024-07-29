@@ -21,11 +21,11 @@
     z-index: 1;
     width: 100%;
     max-width: 1500px;
-    padding: 0 2vw; /* Adjust padding using viewport width units */
+    padding: 0 2vw;
 }
 
 .main__content h1 {
-    font-size: 5vw; /* Adjust font size using viewport width units */
+    font-size: min(max(30px, 5vw), 70px);
     background-image: linear-gradient(to bottom, #5039ff 0%, #00aaaa 90%);
     background-size: 100%;
     padding: 0;
@@ -35,19 +35,9 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content h2 {
-    font-size: 3.5vw; /* Adjust font size using viewport width units */
-    background-image: linear-gradient(to bottom, #00aaaa 0%, #00ffff 90%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
 
 .main__content p {
-    margin-top: 2rem;
-    font-size: 1vw; /* Adjust font size using viewport width units */
+    font-size: min(max(13px, 2vw), 23px);
     font-weight: 700;
     color: #d1d1d1;
 }
@@ -58,25 +48,29 @@
 }
 
 .contactButton {
-    top: 10px;
+    display: block;
+    width: auto; /* Adjust width based on content */
+    max-width: 80vw; /* Limit maximum width relative to viewport */
+    max-height: 70px; /* Limit maximum height to maintain proportions */
+    margin: 0 auto; /* Center horizontally */
     text-align: center;
-    font-size: 1.25rem;
-    background: #4027ff 0%;
+    
+    font-size: min(max(.75rem, 3vw ), 22px); /* Scale font size with screen width */
+    background: #4027ff;
     color: #fff;
     padding: 12px 24px;
     border: none;
-    border-radius: 24px;
-    margin-top: 1.5rem;
+    border-radius: calc(0.5rem + 0.5vw); /* Scale border-radius with screen width */
     position: relative;
     outline: none;
-
+    cursor: pointer; /* Show pointer cursor on hover */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
+
 .contactButton a {
     text-decoration: none;
-    text-align: center;
-    z-index: 1;
-    font-weight: 700;
     color: #fff;
+    font-weight: 700;
 }
 
 .contactButton::before {
@@ -84,15 +78,18 @@
     z-index: -1;
     opacity: 1; /* Initially visible */
 }
+
 .contactButton:hover::after {
     content: "jjo5541@psu.edu";
-    
 }
+
 .contactButton:hover::before {
     content: "";
-    opacity: 0; /* Initially visible */
-
+    opacity: 0; /* Hide the initial content on hover */
 }
+
+
+
 
 .main__img--containerBIG{
     text-align: center;
@@ -159,7 +156,7 @@
 
 
 /* PHONES */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
 
     .main__container{
         height: 100vh;
@@ -167,46 +164,52 @@
         grid-template-rows: auto auto;
     }
     .main__content h1 {
-        font-size: 2rem;
         margin-top:  1.2rem;
 
     }
-    .main__content h2 {
-        font-size: 1rem;
-    }
     .main__content p{
-        font-size: .5rem;
-        margin-top: 1.5rem;
+        margin-top: 5px;
     }
     .main__btn p{
-        padding: 12px 36px;
         margin: 2.5rem 0;
     }
 
     #main__imgBIG{
-        padding-top: 2vh;
+        margin-top: 5px ;
         height: auto;
         width: 30vh;
         max-width: 380px;   
         border-radius: 50px;
     }
+}
 
 
-    .contactButton {
-        top: 5px;
-        text-align: center;
-        font-size: .75rem;
-        background: #4027ff 0%;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 15px;
-        margin-top: .2rem;
-        position: relative;
-        outline: none;
+@media screen and (max-width: 900px) {
+    .main__container{
+        height: 200vh;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto;
     }
+    #main__imgBIG{
+        margin-top: 5px ;
+        height: auto;
+        width: 30vw;
+        max-width: 200px;   
+        border-radius: 30px;
+    }
+}
 
+@media screen and (max-width: 500px) {
 
-
-
+    .main__container{
+        height: 90vh;
+    }
+    
+    #main__imgBIG{
+        margin-top: 5px ;
+        height: auto;
+        width: 30vh;
+        max-width: 380px;   
+        border-radius: 30px;
+    }
 }

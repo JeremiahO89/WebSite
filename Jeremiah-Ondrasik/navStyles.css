@@ -164,7 +164,7 @@
         transition: all 0.5s ease;
         height: 35vh;
         z-index: 99;
-        font-size: 2vw;
+        font-size: min(max(15px, 3vw), 35px);
     }
     .navbar__item{
         height: 10px
@@ -203,15 +203,15 @@
     }
 
     .navbar__btn{
-        padding:.5rem;
+        padding:.25rem;
     }
 
     .button{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80px;
+        width: 40%;
+        height: auto;
         margin: 0;
     }
 
