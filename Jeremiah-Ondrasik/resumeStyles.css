@@ -10,21 +10,22 @@
     display: flex;
     flex-direction: column;
     align-items:  center;
-    height: 100vh;
+    height: 85vh;
 }
+
 
 .main_container h1 {
     background: #ff8177;
-    background-image: linear-gradient(to top,  #f3685e 0%, #ff8177 100%);
+    background-image: linear-gradient(to top, #f3685e 0%, #ff8177 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
+    margin: 0;
+    font-size: min(max(25px, 5vw), 2.5rem);;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: center; /* Ensure text is centered */
 }
-
 .cards__container{
     display: flex;
     justify-content: center;
@@ -33,63 +34,69 @@
 
 .resume_card {
     margin: 1rem;
-    height: 575px;
-    width: 420px;
+    height: min(max(275px, 60vw), 575px);
+    width: min(max(200px, 40vw), 420px);
     border-radius: 15px;
-    background-image: linear-gradient(to Top,
-     rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
+    background-image: linear-gradient(to top,
+        rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
     background-size: cover;
     position: relative;
     color: #fff;
-    
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
+
 .resume_card embed {
     border-radius: 15px;
-    height: 72.5%;
-    width: 100%;
+    height: 75%; /* Fill the container */
+    width: 100%;  /* Fill the container */
+    object-fit: contain; /* Ensure the entire first page is visible */
 }
 
-.resume_card:nth-child(2) {
-    background-image: linear-gradient(to Top,
-    rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
-}
-
-.resume_card:nth-child(3) {
-    background-image: linear-gradient(to Top,
-    rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
-}
-
-.main_container h2 {
+.resume_card h2 {
+    font-size: min(max(10px, 3vw), 30px);
     position: absolute;
-    top: 440px;
-    left: 30px;
+    top: min(max(210px, 47vw), 440px);
+    left: min(max(5px, 3vw), 30px);
 }
 
 .resume_card p {
+    font-size: min(max(6px, 3vw), 16px);
     position: absolute;
-    top: 480px;
-    left: 30px;
+    top: min(max(230px, 47vw), 483px);
+    left: min(max(5px, 3vw), 30px);
 }
+
+
 .resume_card button{
     color: #fff;
-    padding: 10px 20px;
+    padding: min(max(1px, .5vw), 10px) min(max(2px, 1vw), 20px);
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: min(max(2px, 1vw), 4px);
     background: #f77062;
     position: absolute;
-    top: 515px;
-    left: 30px;
-    font-size: 1rem;
+    top: min(max(250px, 47vw), 515px);
+    left: min(max(5px, 3vw), 30px);
+    font-size: min(max(6px, 3vw), 16px);
     cursor: pointer;
 }
+
 .resume_card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.2s ease-in;
     cursor: pointer;
     z-index: 1;
 }
 
+
+
+
+
+
+
+
+
+/* POPUPS */
 .popUp__containerR{
     flex-direction: column;
     position: absolute;
@@ -257,24 +264,13 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-    .services{
-        height: 1600px;
-    }
-    .services h1{
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-    
-}
 
-@media screen and (max-width: 480px) {
-    .services{
-        height: 1400px;
-    }
+/* PHONES */
 
-    .services__card{
-        width: 300px;
+@media screen and (max-width: 500px) {
+    .main_container {
+        background: #141414;
+        height: 120vh;
     }
     
 }
