@@ -69,12 +69,12 @@
 
 .resume_card button{
     color: #fff;
-    padding: min(max(1px, .5vw), 10px) min(max(2px, 1vw), 20px);
     border: none;
     outline: none;
-    border-radius: min(max(2px, 1vw), 4px);
     background: #f77062;
     position: absolute;
+    padding: min(max(1px, .5vw), 10px) min(max(2px, 1vw), 20px);
+    border-radius: min(max(2px, 1vw), 4px);
     top: min(max(250px, 47vw), 515px);
     left: min(max(5px, 3vw), 30px);
     font-size: min(max(6px, 3vw), 16px);

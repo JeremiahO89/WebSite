@@ -100,6 +100,7 @@
     width: 30vw;
     max-width: 475px;   
     border-radius: 25px;
+    padding-top: 10px;
 }
 
 
@@ -159,7 +160,7 @@
 @media screen and (max-width: 980px) {
 
     .main__container{
-        height: 100vh;
+        height: auto;
         grid-template-columns: 1fr; 
         grid-template-rows: auto auto;
     }
@@ -186,7 +187,7 @@
 
 @media screen and (max-width: 900px) {
     .main__container{
-        height: 200vh;
+        height: auto;
         grid-template-columns: 1fr; 
         grid-template-rows: auto auto;
     }
@@ -202,7 +203,7 @@
 @media screen and (max-width: 500px) {
 
     .main__container{
-        height: 90vh;
+        height: auto;
     }
     
     #main__imgBIG{

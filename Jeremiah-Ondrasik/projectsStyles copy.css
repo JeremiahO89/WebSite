@@ -10,14 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items:  center;
-    height: auto;
+    height: 350vh;
 }
 .projects_main h1 {
     background: #ff8177;
     background-image: linear-gradient(to top, #b8336a 0%, #fd66ac 100%);
     background-size: 100%;
     margin-bottom: .5rem;
-    font-size: min(max(25px, 5vw), 2.5rem);
+    font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -28,16 +28,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width:90vw;
-    padding: 2vw;
-    height: auto;
-}
+    width:1300px;
+    height: 3000px;}
 
 
 .project__card {
     margin: 1rem;
-    height: auto ;
-    width: min(max(330px, 40vw), 575px);
+    height: 700px;
+    width: 575px;
     border-radius: 15px;
     background-image: linear-gradient(to Top,
      rgba(155, 155, 155, .25) 10%, rgba(168, 135, 91, 1) 100%);
@@ -45,41 +43,40 @@
     position: relative;
     color: #fff;    
 }
-/* .project__card embed {
+.project__card embed {
     border-radius: 15px;
     height: 460px;
     width: 950px;
     display: block;
     margin: 0 auto;
-} */
+}
 
 .projects_main h2 {
     position: absolute;
-    font-size: min(max(15px, 2vw), 25px);
-    bottom: min(max(230px, 10vw), 150px);
-    left: min(max(5px, 3vw), 30px);
+    bottom: 150px;
+    left: 30px;
 }
 
 .project__card p {
     position: absolute;
-    font-size: min(max(10px, 3vw), 16px);
-    bottom: min(max(100px, 10vw), 65px);
-    left: min(max(5px, 3vw), 30px);
-}
+    bottom: 65px;
+    left: 30px;}
 
 .project__card button{
     color: #fff;
-    background: #fd66ac 100%;
-    position: absolute;
+    padding: 10px 20px;
     border: none;
     outline: none;
-    padding: min(max(4px, .5vw), 10px) min(max(4px, 1vw), 20px);
-    border-radius: min(max(3px, 1vw), 4px);
-    bottom: min(max(5px, 10vw), 10px);
-    left: min(max(5px, 3vw), 30px);
-    font-size: min(max(8px, 3vw), 16px);
+    border-radius: 4px;
+    background: #fd66ac 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 1rem;
     cursor: pointer;
 }
+
+
 .project__card button:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in;
@@ -89,13 +86,14 @@
 
 
 /* USED FOR THE ROTATING IMAGES */
+
 .carousel {
     align-items: center;
     justify-content: center;
     display: flex;
     padding: 25px;
-    width: min(max(330px, 40vw), 575px);
-    height: min(max(600px, 40vw), 800px);;
+    width: 575px;
+    height: 475px;
     overflow: hidden;
 }
 
@@ -197,9 +195,11 @@
     display: block;
 }
 
+
+
 .control {
     position: absolute;
-    bottom: min(max(230px, 10vw), 145px);
+    top: 50%;
     transform: translateY(-50%);
     font-size: 2em;
     color: #fd66ac;
@@ -207,12 +207,13 @@
     padding: 0 10px;
     cursor: pointer;
     user-select: none;
-    z-index: 9999;
 }
 
 .control.left {
-    left: min(max(125px, 14vw), 200px);
+    left: 200px;
+    top: 490px;
 }
 .control.right {
-    right: min(max(125px, 14vw), 200px);
+    right: 200px;
+    top: 490px;
 }
