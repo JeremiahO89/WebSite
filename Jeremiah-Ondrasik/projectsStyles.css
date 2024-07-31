@@ -62,7 +62,7 @@
 
 .project__card p {
     position: absolute;
-    font-size: min(max(10px, 3vw), 16px);
+    font-size: min(max(10px, 1.25vw), 16px);
     bottom: min(max(100px, 10vw), 65px);
     left: min(max(5px, 3vw), 30px);
 }
@@ -95,15 +95,19 @@
     display: flex;
     padding: 25px;
     width: min(max(330px, 40vw), 575px);
-    height: min(max(600px, 40vw), 800px);;
+    height: min(max(500px, 60vw), 700px);
     overflow: hidden;
+    position: relative;
 }
 
 .drone-inner {
+    position: absolute;
+    top: 3%;
     width: 95%;
     display: flex;
     align-items: center;
     transition: transform 0.5s ease-in-out;
+
 }
 
 .drone-item {
@@ -114,9 +118,12 @@
 .drone-item img {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 
 .arm-inner {
+    position: absolute;
+    top: 3%;
     width: 95%;
     display: flex;
     align-items: center;
@@ -131,14 +138,18 @@
 .arm-item img {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 .arm-item video {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 
 
 .longboard-inner {
+    position: absolute;
+    top: 3%;
     width: 95%;
     display: flex;
     align-items: center;
@@ -153,13 +164,39 @@
 .longboard-item img {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 .longboard-item video {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 
+
+.shiftRegister-inner {
+    position: absolute;
+    top: 15%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.shiftRegister-item {
+    min-width:100%;
+    box-sizing: border-box;
+}
+
+.shiftRegister-item video {
+    width: 100%;
+    display: block;
+    max-height:450px;
+}
+
+
 .school-inner {
+    position: absolute;
+    top: 3%;
     width: 95%;
     display: flex;
     align-items: center;
@@ -174,9 +211,12 @@
 .school-item img {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 
 .mazeSolver-inner {
+    position: absolute;
+    top: 3%;
     width: 95%;
     display: flex;
     align-items: center;
@@ -191,17 +231,19 @@
 .mazeSolver-item img {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 .mazeSolver-item video {
     width: 100%;
     display: block;
+    max-height:450px;
 }
 
 .control {
     position: absolute;
-    bottom: min(max(230px, 10vw), 145px);
+    bottom: min(max(230px, 10vw), 160px);
     transform: translateY(-50%);
-    font-size: 2em;
+    font-size: min(max(30px, 5vw), 40px);
     color: #fd66ac;
     text-decoration: none;
     padding: 0 10px;
@@ -215,4 +257,36 @@
 }
 .control.right {
     right: min(max(125px, 14vw), 200px);
+}
+
+@media screen and (max-width: 500px) {
+
+    .drone-item img {
+        max-height:300px;
+    }
+    .arm-item img {
+        max-height:300px;
+    }
+    .arm-item video {
+        max-height:300px;
+    }
+
+    .longboard-item img {
+        max-height:300px;
+    }
+    .longboard-item video {
+        max-height:300px;
+    }
+
+    .school-item img {
+        max-height:300px;
+    }
+
+    .mazeSolver-item img {
+        max-height:300px;
+    }
+    .mazeSolver-item video {
+        max-height:300px;
+    }
+
 }
