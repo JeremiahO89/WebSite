@@ -9,6 +9,21 @@ closeBtnR.onclick = () => {
     popUpContainerR.classList.remove('active');
 }
 
+
+
+const showLetterPopup = document.querySelector(".letter-button");
+const popUpContainerL = document.querySelector(".popUp__containerL");
+const closeBtnL = document.querySelector(".close-btnL");
+
+showLetterPopup.onclick = () => {
+    popUpContainerL.classList.add('active');
+}
+closeBtnL.onclick = () => {
+    popUpContainerL.classList.remove('active');
+}
+
+
+
 const showTranscriptPopup = document.querySelector(".transcript-button");
 const popUpContainerT = document.querySelector(".popUp__containerT");
 const closeBtnT = document.querySelector(".close-btnT");
